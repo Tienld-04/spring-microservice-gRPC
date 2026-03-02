@@ -1,4 +1,4 @@
-package com.ldt.walletservice;
+package com.ldt.wallet;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

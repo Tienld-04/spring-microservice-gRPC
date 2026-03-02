@@ -1,4 +1,4 @@
-package com.ldt.walletservice;
+package com.ldt.wallet;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
