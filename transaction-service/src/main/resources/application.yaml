@@ -22,5 +22,10 @@ service:
     url: "http://localhost:8082"
 user-service:
   url: "http://localhost:8081"
+grpc:
+  client:
+    wallet-service:
+      address: static://localhost:9092
+      negotiation-type: plaintext
 internal:
   secret: "${INTERNAL_SECRET:internal-secret}"
