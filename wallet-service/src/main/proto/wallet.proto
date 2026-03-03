@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package com.ldt.wallet;
+option java_multiple_files = true;
+option java_package = "com.ldt.wallet.grpc";
+//option java_outer_classname = "WalletProto";
+
+service WalletService {
+  rpc Transfer (WalletTransferRequest) returns (WalletTransferResponse);
+}
+
+message WalletTransferRequest {
+  string fromUserId = 1;
+  string toUserId = 2;
+  string amount = 3;
+}
+
+message WalletTransferResponse {
+  string status = 1;
+}
