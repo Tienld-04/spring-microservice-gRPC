@@ -46,7 +46,7 @@ public class TransactionService {
         if (transactionRepository.existsByRequestId(transferRequest.getRequestId())) {
             throw new RuntimeException("Giao dịch đang được xử lí");
         }
-        // Gọi user-service qua REST (giữ nguyên)
+        // Gọi user-service qua REST
         ResponseEntity<UserInternalResponse> responseFromUser =
                 restTemplate.getForEntity(
                         userServiceUrl + "/internal/users/" + transferRequest.getFromPhoneNumber(),
