@@ -1,4 +1,4 @@
-package com.ldt.wallet.grpc.auth;
+package com.ldt.wallet.grpc.internal;
 
 import io.grpc.*;
 import net.devh.boot.grpc.server.interceptor.GrpcGlobalServerInterceptor;
